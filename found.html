@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Results</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container-fluid">
+        <!-- Header -->
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0);">ABC Auction</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li align="center"><a href="javascript:void(0)"><span class="glyphicon glyphicon-question-sign"></span><br>Help</a></li>
+                    <li align="center"><a href="javascript:void(0);"><span class="glyphicon glyphicon-user"></span><br>Login</a></li>
+                    <li align="center"><a href="javascript:void(0)"><span class="glyphicon glyphicon-shopping-cart"></span><br>Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!-- / Header -->
+
+        <!-- Body -->
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Search result</li>
+        </ol>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-12 form-group">
+                        <label for="productTitle1">Product</label>
+                        <input type="text" class="form-control" id="productTitle1" placeholder="Product title">
+                    </div>
+
+                    <div class="col-md-12 col-sm-6 col-xs-12">
+                        <p></p>
+                        <div class="input-group">
+                            <label for="category1"></label>
+                            <input type="text" class="form-control" id="category1" aria-label="..." placeholder="Category">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 1</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 2</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <label for="priceLimits1">Current Price</label>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="number" class="form-control" inputmode="numeric" id="priceLimits1" value="1000">
+                        <div class="input-group-addon">$</div>
+                        <input type="number" class="form-control" id="priceLimits2" value="1500">
+                    </div>
+                </form>
+<!--                   <input type="range" class="form-control" id="priceRange1">-->
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label for="auctionCloseDate1">Max Auction Close Date</label>
+                    <input type="date" class="form-control" id="auctionCloseDate1" placeholder="01/01/2014">
+                    <br>
+                    <form class="form-inline">
+                        <label for="bidsNumber1">Number of bids</label>
+                        <input type="number" class="form-control" id="bidsNumber1" min="1" max="5" value="3">
+                    </form>
+                </div>
+            </div>
+<!--            <h1>Number of bids</h1>-->
+        </div>
+        <div class="text-center">
+            <button class="btn btn-default btn-lg">Find Now</h1>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="assets/img/01.jpg" class="img-responsive pull-left" alt="Item 1">
+                <h2>Item 1</h2>
+                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim ad minim veniam</article>
+                <div class="row" style="clear: both">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        6h left
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        17 Watchers
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        $ 1234 Current Price
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <img src="assets/img/02.jpg" class="img-responsive pull-left" alt="Item 2">
+                <h2>Item 2</h2>
+                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore adipiscing elit. Ut enim ad minim veniam</article>
+                <div class="row" style="clear: both">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        6h left
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        17 Watchers
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        $ 1234 Current Price
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Body -->
+
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <br/>
+            <a href="javascript:void(0)">Home</a> |
+            <a href="javascript:void(0)">Search</a> |
+            <a href="javascript:void(0)">About Us</a> |
+            <a href="javascript:void(0)">Terms of Service</a>
+            <br/><br/>
+        </footer>
+        <!-- / Footer -->
+    </div>
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
